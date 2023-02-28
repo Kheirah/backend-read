@@ -12,8 +12,8 @@ export default function JokeList() {
   return (
     <ul>
       {data.map((joke) => (
-        <li key={joke.id}>
-          <button type="button" onClick={() => router.push(`/${joke.id}`)}>
+        <li key={joke._id}>
+          <button type="button" onClick={() => router.push(`/${joke._id}`)}>
             {joke.joke}
           </button>
         </li>
